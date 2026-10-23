@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanz mit mir ❤️</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px 16px;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+
+      background:
+        radial-gradient(circle at 20% 20%, #b1008e 0%, transparent 30%),
+        radial-gradient(circle at 80% 30%, #4213a8 0%, transparent 35%),
+        linear-gradient(160deg, #08051b, #16052c 55%, #050510);
+    }
+
+    .player {
+      width: 100%;
+      max-width: 520px;
+      padding: 18px;
+      border-radius: 28px;
+
+      background: rgba(12, 8, 35, 0.78);
+      box-shadow:
+        0 0 30px rgba(255, 0, 180, 0.35),
+        0 0 60px rgba(90, 50, 255, 0.20);
+
+      backdrop-filter: blur(10px);
+    }
+
+    .cover {
+      width: 100%;
+      display: block;
+      border-radius: 20px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.55);
+    }
+
+    h1 {
+      margin: 22px 0 5px;
+      font-size: 2.2rem;
+      font-weight: 600;
+    }
+
+    .subtitle {
+      margin: 0 0 22px;
+      color: #e6c9ee;
+      font-size: 1.05rem;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 8px;
+    }
+
+    .message {
+      margin-top: 25px;
+      line-height: 1.6;
+      font-size: 1.05rem;
+      color: #f6eafa;
+    }
+
+    .heart {
+      font-size: 1.7rem;
+      margin-top: 14px;
+    }
+
+    .footer {
+      margin-top: 24px;
+      font-size: 0.8rem;
+      color: #a99ab2;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="player">
+
+    <img
+      class="cover"
+      src="Cover.png"
+      alt="Tanz mit mir"
+    >
+
+    <h1>Tanz mit mir</h1>
+
+    <p class="subtitle">
+      Ein Lied für uns.
+    </p>
+
+    <audio controls preload="metadata">
+      <source src="Tanz-mit-mir.mp3" type="audio/mpeg">
+      Dein Browser unterstützt die Audiowiedergabe leider nicht.
+    </audio>
+
+    <div class="message">
+      Für meinen Schatz.<br>
+      Für all unsere kleinen und großen Momente.<br>
+      Und für dieses wunderbare Wir.
+      
+      <div class="heart">❤️</div>
+    </div>
+
+    <div class="footer">
+      Ralph &amp; Angi
+    </div>
+
+  </main>
+
+</body>
+</html>
